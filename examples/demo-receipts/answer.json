@@ -1,0 +1,67 @@
+{
+  "answer_id": "citation-drift-lab-demo-v01",
+  "question": "What is the project record limit?; What exception applies during incidents?; Where are audit exports stored?",
+  "response": "## Project limits <script>alert(\"receipt\")</script>\n\nEach project may retain up to 30 records.\n\n## Incident exception\n\nDuring a declared incident, administrators may exceed the limit for 24 hours.\n\n## Audit exports\n\nAudit exports are stored in the compliance archive.",
+  "mode": "extractive_offline",
+  "claims": [
+    {
+      "claim_id": "demo:claim:1",
+      "text": "## Project limits <script>alert(\"receipt\")</script>\n\nEach project may retain up to 30 records.",
+      "citations": [
+        {
+          "start": 25,
+          "end": 121,
+          "document_id": "team-policy",
+          "version_hash": "f584072012b6db5a5cafa5e6f3d84ff03bc5aa70f74a96ed273698aa194e5ce5",
+          "source_path": "examples\\fixtures\\policy-v1.md",
+          "heading_path": [
+            "Team retention policy",
+            "Project limits <script>alert(\"receipt\")</script>"
+          ],
+          "quote": "## Project limits <script>alert(\"receipt\")</script>\n\nEach project may retain up to 30 records.\n\n",
+          "chunk_id": "team-policy:f584072012b6:1"
+        }
+      ]
+    },
+    {
+      "claim_id": "demo:claim:2",
+      "text": "## Incident exception\n\nDuring a declared incident, administrators may exceed the limit for 24 hours.",
+      "citations": [
+        {
+          "start": 121,
+          "end": 223,
+          "document_id": "team-policy",
+          "version_hash": "f584072012b6db5a5cafa5e6f3d84ff03bc5aa70f74a96ed273698aa194e5ce5",
+          "source_path": "examples\\fixtures\\policy-v1.md",
+          "heading_path": [
+            "Team retention policy",
+            "Incident exception"
+          ],
+          "quote": "## Incident exception\n\nDuring a declared incident, administrators may exceed the limit for 24 hours.\n\n",
+          "chunk_id": "team-policy:f584072012b6:2"
+        }
+      ]
+    },
+    {
+      "claim_id": "demo:claim:3",
+      "text": "## Audit exports\n\nAudit exports are stored in the compliance archive.",
+      "citations": [
+        {
+          "start": 223,
+          "end": 294,
+          "document_id": "team-policy",
+          "version_hash": "f584072012b6db5a5cafa5e6f3d84ff03bc5aa70f74a96ed273698aa194e5ce5",
+          "source_path": "examples\\fixtures\\policy-v1.md",
+          "heading_path": [
+            "Team retention policy",
+            "Audit exports"
+          ],
+          "quote": "## Audit exports\n\nAudit exports are stored in the compliance archive.\n\n",
+          "chunk_id": "team-policy:f584072012b6:3"
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-09-05T14:40:43.286375Z",
+  "integrity_note": "Exact quote matching verifies lexical integrity, not semantic entailment."
+}

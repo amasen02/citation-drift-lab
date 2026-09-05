@@ -1,0 +1,1 @@
+Citation drift, reproducible offline: 30→20 is changed, an exception is deleted, an unchanged quote relocates. `citation-drift-lab` emits exact-span receipts + bounded abstention. https://github.com/amasen02/citation-drift-lab

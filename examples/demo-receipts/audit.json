@@ -1,0 +1,73 @@
+{
+  "answer_id": "citation-drift-lab-demo-v01",
+  "findings": [
+    {
+      "finding_id": "citation-drift-lab-demo-v01:demo:claim:1:1",
+      "claim_id": "demo:claim:1",
+      "document_id": "team-policy",
+      "status": "changed",
+      "affects_claim": true,
+      "material_change": true,
+      "old_hash": "f584072012b6db5a5cafa5e6f3d84ff03bc5aa70f74a96ed273698aa194e5ce5",
+      "new_hash": "977817b566c1956537192c648bffeb9cb6a464416e1782544161b636d27e8f32",
+      "old_start": 25,
+      "old_end": 121,
+      "new_start": 86,
+      "new_end": 182,
+      "old_quote": "## Project limits <script>alert(\"receipt\")</script>\n\nEach project may retain up to 30 records.\n\n",
+      "candidate_quote": "## Project limits <script>alert(\"receipt\")</script>\n\nEach project may retain up to 20 records.\n\n",
+      "heading_path": [
+        "Team retention policy",
+        "Project limits <script>alert(\"receipt\")</script>"
+      ],
+      "explanation": "The exact quote disappeared and the closest section changed."
+    },
+    {
+      "finding_id": "citation-drift-lab-demo-v01:demo:claim:2:1",
+      "claim_id": "demo:claim:2",
+      "document_id": "team-policy",
+      "status": "deleted",
+      "affects_claim": true,
+      "material_change": false,
+      "old_hash": "f584072012b6db5a5cafa5e6f3d84ff03bc5aa70f74a96ed273698aa194e5ce5",
+      "new_hash": "977817b566c1956537192c648bffeb9cb6a464416e1782544161b636d27e8f32",
+      "old_start": 121,
+      "old_end": 223,
+      "new_start": null,
+      "new_end": null,
+      "old_quote": "## Incident exception\n\nDuring a declared incident, administrators may exceed the limit for 24 hours.\n\n",
+      "candidate_quote": null,
+      "heading_path": [
+        "Team retention policy",
+        "Incident exception"
+      ],
+      "explanation": "The exact quote and a sufficiently similar section are absent."
+    },
+    {
+      "finding_id": "citation-drift-lab-demo-v01:demo:claim:3:1",
+      "claim_id": "demo:claim:3",
+      "document_id": "team-policy",
+      "status": "relocated",
+      "affects_claim": false,
+      "material_change": false,
+      "old_hash": "f584072012b6db5a5cafa5e6f3d84ff03bc5aa70f74a96ed273698aa194e5ce5",
+      "new_hash": "977817b566c1956537192c648bffeb9cb6a464416e1782544161b636d27e8f32",
+      "old_start": 223,
+      "old_end": 294,
+      "new_start": 182,
+      "new_end": 253,
+      "old_quote": "## Audit exports\n\nAudit exports are stored in the compliance archive.\n\n",
+      "candidate_quote": "## Audit exports\n\nAudit exports are stored in the compliance archive.\n\n",
+      "heading_path": [
+        "Team retention policy",
+        "Audit exports"
+      ],
+      "explanation": "The exact cited quote is still present; lexical validity is preserved."
+    }
+  ],
+  "affected_claim_ids": [
+    "demo:claim:1",
+    "demo:claim:2"
+  ],
+  "integrity_note": "Quote presence is not entailment; an unchanged quote can acquire different surrounding meaning."
+}

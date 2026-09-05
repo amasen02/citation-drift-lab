@@ -1,0 +1,10 @@
+{
+  "question": "What is the project record limit?",
+  "source": "examples/fixtures/policy-v1.md",
+  "document_id": "team-policy",
+  "config": {
+    "top_k": 3,
+    "max_revisions": 1
+  },
+  "note": "Human-readable CLI request example; use the equivalent flags shown in README.md."
+}
