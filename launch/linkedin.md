@@ -8,6 +8,6 @@ Run it with Python 3.11+ and no model or network service:
 
 `python -m venv .venv` → install editable → `.venv\Scripts\citation-drift-lab demo --output-dir demo-output`
 
-The project favors reproducible provenance over polished generation. Exact quote equality still cannot prove semantic entailment; human review remains part of the workflow.
+The project favors reproducible provenance over polished generation. Its bounded graph follows the [LangGraph Graph API](https://docs.langchain.com/oss/python/langgraph/graph-api). Exact quote equality still cannot prove semantic entailment; human review remains part of the workflow.
 
-Built with AI assistance from a user-directed brief; code, tests, receipts, and limitations are included. Publication pending: https://github.com/amasen02/citation-drift-lab
+Built with AI assistance from a user-directed brief; code, tests, receipts, and limitations are included. Repository: [citation-drift-lab](https://github.com/amasen02/citation-drift-lab)

@@ -30,7 +30,7 @@ The audit reports two affected claim IDs. The unsupported question produces `abs
 
 Markdown ingestion creates a source version with a SHA-256 hash. Chunks retain ATX heading ancestry and half-open Python string offsets. A citation stores the document ID, source hash, path, heading path, chunk ID, quote, and offsets. The quote can therefore be checked by slicing the original source string. The hash verifies that the supplied text matches the receipt; it does not establish who authored the file or whether the source is trustworthy.
 
-The graph is a compiled LangGraph `StateGraph` with prepare, retrieve, validate, answer, revise, and abstain paths. The default retriever is named `lexical_bm25`: deterministic BM25-like token scoring followed by a lexical coverage threshold. A bounded revision counter and graph recursion limit keep an unsupported request finite.
+The graph is a compiled [LangGraph `StateGraph`](https://docs.langchain.com/oss/python/langgraph/graph-api) with prepare, retrieve, validate, answer, revise, and abstain paths. The default retriever is named `lexical_bm25`: deterministic BM25-like token scoring followed by a lexical coverage threshold. A bounded revision counter and graph recursion limit keep an unsupported request finite.
 
 The default answer mode is extractive. It cites the selected section rather than asking a language model to paraphrase it. Optional `hybrid_bm25_ollama` retrieval can fuse lexical and cosine ranks through Ollama’s local embedding endpoint. Optional Ollama chat generation is labelled `ollama_chat_unverified`; its citations identify supplied evidence, but the project does not claim semantic entailment or sentence-level attribution validation.
 
@@ -50,4 +50,4 @@ Start by inspecting `answer.json`, then verify one citation with `source_text[st
 
 The repository was built with AI assistance from a user-directed brief and an agent-developed plan. The implementation, tests, model-free receipts, and stated limitations are available for inspection. The fresh verification recorded 29 passing tests; semantic answer quality and live model quality were not measured.
 
-Repository: https://github.com/amasen02/citation-drift-lab (publication pending).
+Repository: [citation-drift-lab](https://github.com/amasen02/citation-drift-lab).
